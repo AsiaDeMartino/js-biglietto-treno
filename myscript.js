@@ -30,7 +30,7 @@ if( età <= 18 ) {
 }
 
 //applicare sconto 40% se l'età è > 65
-else if( età <= 65 ) {
+else if( età >= 65 ) {
     sconto = (costo * 40) / 100;
     console.log(sconto);
     costo = costo - sconto;
@@ -38,4 +38,4 @@ else if( età <= 65 ) {
 }
 
 //aggiungere prezzo all'html
-document.getElementById("ticket").innerHTML += costo + "€";
+document.getElementById("ticket").innerHTML += (costo) + "€";
