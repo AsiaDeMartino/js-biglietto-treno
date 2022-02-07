@@ -14,7 +14,7 @@ console.log(età);
 // }
 
 if( isNaN(numeroKilometri) || isNaN(età) ) {
-     alert("Devi inserire un numero!")
+     alert("Devi inserire un numero!");
 } else{
     //calcolare costo viaggio (km * 0,21€)
 let costo = numeroKilometri * 0.21;
@@ -33,7 +33,7 @@ if( età < 18 ) {                          //applicare sconto 20% se l'età è >
 }
 
 //aggiungere prezzo all'html
-document.getElementById("ticket").innerHTML += (costo) + "€";
+document.getElementById("ticket").innerHTML += (costo.toFixed(2)) + "€";
 }
 
 
